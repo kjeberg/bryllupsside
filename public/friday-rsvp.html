@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Friday supper sign-up</title>
+  </head>
+  <body>
+    <!--
+      This file exists only so Netlify's build bot can detect and register the
+      form. It is never shown to guests — the real form lives in
+      src/routes/friday.tsx and POSTs to this path.
+      Every field below must match the fields that form submits.
+    -->
+    <form name="friday-supper" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="friday-supper" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="radio" name="attending" value="yes" />
+      <input type="number" name="party-size" />
+      <input type="text" name="guest-names" />
+      <textarea name="dietary"></textarea>
+      <input type="text" name="arrival" />
+      <textarea name="note"></textarea>
+    </form>
+  </body>
+</html>
